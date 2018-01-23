@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="caption_size">24sp</dimen>
+    <dimen name="textView_margin_top">10dp</dimen>
+    <dimen name="textView_margin_bottom">10dp</dimen>
+</resources>
