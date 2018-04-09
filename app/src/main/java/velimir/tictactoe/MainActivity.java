@@ -10,9 +10,10 @@ import android.widget.TextView;
 import java.nio.file.Files;
 
 public class MainActivity extends AppCompatActivity {
-    TextView tictactoe;
-    Button playGame;
-    Button aboutGame;
+
+    private TextView tictactoe;
+    private Button playGame,aboutGame;
+
 
 
 

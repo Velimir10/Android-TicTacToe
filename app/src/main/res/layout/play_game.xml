@@ -8,103 +8,105 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_1_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_1_click"/>
+            android:textSize="78sp" />
 
         <Button
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_2_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_2_click"/>
+            android:textSize="78sp" />
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_3_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_3_click"/>
+            android:textSize="78sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_4_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_4_click"/>
+            android:textSize="78sp" />
 
         <Button
             android:id="@+id/btn5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_5_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_5_click"/>
+            android:textSize="78sp" />
 
         <Button
             android:id="@+id/btn6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_6_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_6_click"/>
+            android:textSize="78sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_7_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_7_click"/>
+            android:textSize="78sp" />
 
         <Button
             android:id="@+id/btn8"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_8_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_8_click"/>
+            android:textSize="78sp" />
 
         <Button
             android:id="@+id/btn9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="onButton_9_click"
             android:text=""
-            android:textSize="78sp"
-            android:onClick="onButton_9_click"/>
+            android:textSize="78sp" />
 
     </LinearLayout>
 

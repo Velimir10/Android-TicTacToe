@@ -49,12 +49,13 @@ public class PlayGame extends AppCompatActivity {
         buttons[7] = btn8;
         buttons[8] = btn9;
 
-        fillTheList();
 
+        fillTheList();
         playGame();
 
 
     }
+
 
     // Player O  logic
     private void computerTurn() {
@@ -92,164 +93,108 @@ public class PlayGame extends AppCompatActivity {
                         case R.id.btn1:
 
                             if (btn1.getText().toString().equals("")) {
-                                btn1.setText("X");
-                                availableBtns.remove(btn1);
-                                btn1.setEnabled(false);
-                                if(checkPlayerXresult()){
+                                playerXTurn(btn1);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn2:
 
                             if (btn2.getText().toString().equals("")) {
-                                btn2.setText("X");
-                                availableBtns.remove(btn2);
-                                btn2.setEnabled(false);
-                                if(checkPlayerXresult()){
+                                playerXTurn(btn2);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn3:
-
                             if (btn3.getText().toString().equals("")) {
-                                btn3.setText("X");
-                                availableBtns.remove(btn3);
-                                btn3.setEnabled(false);
-                                if(checkPlayerXresult()){
+                                playerXTurn(btn3);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn4:
-
                             if (btn4.getText().toString().equals("")) {
-                                btn4.setText("X");
-                                availableBtns.remove(btn4);
-                                btn4.setEnabled(false);
-                                if(checkPlayerXresult()){
+                                playerXTurn(btn4);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn5:
-
                             if (btn5.getText().toString().equals("")) {
-                                btn5.setText("X");
-                                availableBtns.remove(btn5);
-                                btn5.setEnabled(false);
-                                if(checkPlayerXresult()){
+
+                                playerXTurn(btn5);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn6:
-
                             if (btn6.getText().toString().equals("")) {
-                                btn6.setText("X");
-                                availableBtns.remove(btn6);
-                                btn6.setEnabled(false);
-                                if(checkPlayerXresult()){
+
+                                playerXTurn(btn6);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn7:
-
                             if (btn7.getText().toString().equals("")) {
-                                btn7.setText("X");
-                                availableBtns.remove(btn7);
-                                btn7.setEnabled(false);
-                                if(checkPlayerXresult()){
+
+                                playerXTurn(btn7);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn8:
-
                             if (btn8.getText().toString().equals("")) {
-                                btn8.setText("X");
-                                availableBtns.remove(btn8);
-                                btn8.setEnabled(false);
-                                if(checkPlayerXresult()){
+
+                                playerXTurn(btn8);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                         case R.id.btn9:
-
                             if (btn9.getText().toString().equals("")) {
-                                btn9.setText("X");
-                                availableBtns.remove(btn9);
-                                btn9.setEnabled(false);
-                                if(checkPlayerXresult()){
+
+                                playerXTurn(btn9);
+                                if (checkPlayerXresult()) {
                                     break;
                                 }
 
-
                             }
-                                computerTurn();
-                                checkPlayerOresult();
-
-
-
+                            computerTurn();
+                            checkPlayerOresult();
                             break;
                     }
 
@@ -320,7 +265,7 @@ public class PlayGame extends AppCompatActivity {
 
             return true;
 
-        } else if (allButtonsFilled()){
+        } else if (allButtonsFilled()) {
             Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -404,7 +349,6 @@ public class PlayGame extends AppCompatActivity {
     }
 
 
-
     // Set all butons available for the next gamepick
     // Set all buttons empty
     // Delete all buttons stacked in the list
@@ -427,6 +371,14 @@ public class PlayGame extends AppCompatActivity {
         for (int i = 0; i < buttons.length; i++) {
             buttons[i].setEnabled(false);
         }
+    }
+
+
+    private void playerXTurn(Button button) {
+        button.setText("X");
+        availableBtns.remove(button);
+        button.setEnabled(false);
+
     }
 
 
